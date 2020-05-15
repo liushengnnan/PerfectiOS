@@ -1,0 +1,9 @@
+/* Localizable.strings
+
+/* Common */
+"Common.NoResults" = "No Results";
+/* Toast */
+"Toast.ConnectionBack.Message" = "Back online";
+"Toast.ConnectionLost.Message" = "No connection";
+/* SPH */
+"SPH.Home" = "Home";
