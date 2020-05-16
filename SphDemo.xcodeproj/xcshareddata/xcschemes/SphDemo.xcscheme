@@ -20,6 +20,34 @@
                ReferencedContainer = "container:SphDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A09499651E1D1CB700EFDE29"
+               BuildableName = "SphDemoTests.xctest"
+               BlueprintName = "SphDemoTests"
+               ReferencedContainer = "container:SphDemo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A09499701E1D1CB700EFDE29"
+               BuildableName = "SphDemoUITests.xctest"
+               BlueprintName = "SphDemoUITests"
+               ReferencedContainer = "container:SphDemo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -39,6 +67,26 @@
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A09499651E1D1CB700EFDE29"
+               BuildableName = "SphDemoTests.xctest"
+               BlueprintName = "SphDemoTests"
+               ReferencedContainer = "container:SphDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A09499701E1D1CB700EFDE29"
+               BuildableName = "SphDemoUITests.xctest"
+               BlueprintName = "SphDemoUITests"
+               ReferencedContainer = "container:SphDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

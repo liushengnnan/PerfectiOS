@@ -366,9 +366,9 @@
 		C762C64F1E1D559000C09EBD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C762C6701E1D5A7300C09EBD /* Extensions */,
 				A09DE8CA20E7BE9B00F6F2BF /* Table View Cells */,
 				C762C6501E1D559000C09EBD /* BarButtonItem.swift */,
-				C762C6701E1D5A7300C09EBD /* Extensions */,
 				C762C6551E1D559000C09EBD /* ImageView.swift */,
 				C762C6561E1D559000C09EBD /* Label.swift */,
 				C762C6571E1D559000C09EBD /* NavigationController.swift */,
