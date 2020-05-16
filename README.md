@@ -1,7 +1,11 @@
 # PerfectiOS
 
 
-## Moya + RxSwift + ObjectMapper + MVVM
+#### Moya + RxSwift + ObjectMapper 
+
+## Architecture pattern
+
+MVVM
 
 ## Task
 

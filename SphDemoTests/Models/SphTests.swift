@@ -69,7 +69,7 @@ class YearRecordTests: QuickSpec {
         record4.volumeOfMobileData = "0.00543"
         let records2 = [record1, record2, record3, record4]
         describe("YearRecord convertToYearRecords") {
-            it("save and remove user") {
+            it("convertToYearRecords") {
                 let yearRecords = YearRecord.convertToYearRecords(records: records2)
                 expect(yearRecords).to(haveCount(2))
             }
