@@ -8,6 +8,8 @@
 
 import Quick
 import Nimble
+import RxBlocking
+
 @testable import SphDemo
 
 class RecordTests: QuickSpec {

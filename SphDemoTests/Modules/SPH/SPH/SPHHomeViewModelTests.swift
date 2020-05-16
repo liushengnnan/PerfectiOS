@@ -31,6 +31,12 @@ class SPHHomeViewModelTests: QuickSpec {
                 viewModel = SPHHomeViewModel(id: id, provider: provider)
                 self.testViewModel(viewModel: viewModel, disposeBag: disposeBag)
             }
+            it("SPHHomeViewModel request") {
+                let id = "a807b7ab-6cad-4aa6-87d0-e283a7353a0f"
+                viewModel = SPHHomeViewModel(id: id, provider: provider)
+                let result = try! viewModel.request(id: id).toBlocking().first()
+                expect(result).to(haveCount(2))
+            }
         }
     }
     func testViewModel(viewModel: SPHHomeViewModel, disposeBag: DisposeBag) {
