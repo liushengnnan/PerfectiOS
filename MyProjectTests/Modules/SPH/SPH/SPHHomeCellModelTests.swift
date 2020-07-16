@@ -1,6 +1,6 @@
 //
 //  SPHHomeCellModelTests.swift
-//  SphDemoTests
+//  MyProjectTests
 //
 //  Created by shengnan liu on 16/5/20.
 //  Copyright © 2020 sph. All rights reserved.
@@ -9,7 +9,7 @@
 import Quick
 import Nimble
 import RxSwift
-@testable import SphDemo
+@testable import MyProject
 
 class SPHHomeCellModelTests: QuickSpec {
     override func spec() {

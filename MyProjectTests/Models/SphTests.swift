@@ -10,7 +10,7 @@ import Quick
 import Nimble
 import RxBlocking
 
-@testable import SphDemo
+@testable import MyProject
 
 class RecordTests: QuickSpec {
     override func spec() {

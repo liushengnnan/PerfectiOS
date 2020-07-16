@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A09499511E1D1CB600EFDE29"
-               BuildableName = "SphDemo.app"
-               BlueprintName = "SphDemo"
-               ReferencedContainer = "container:SphDemo.xcodeproj">
+               BuildableName = "MyProject.app"
+               BlueprintName = "MyProject"
+               ReferencedContainer = "container:MyProject.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A09499651E1D1CB700EFDE29"
-               BuildableName = "SphDemoTests.xctest"
-               BlueprintName = "SphDemoTests"
-               ReferencedContainer = "container:SphDemo.xcodeproj">
+               BuildableName = "MyProjectTests.xctest"
+               BlueprintName = "MyProjectTests"
+               ReferencedContainer = "container:MyProject.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A09499701E1D1CB700EFDE29"
-               BuildableName = "SphDemoUITests.xctest"
-               BlueprintName = "SphDemoUITests"
-               ReferencedContainer = "container:SphDemo.xcodeproj">
+               BuildableName = "MyProjectUITests.xctest"
+               BlueprintName = "MyProjectUITests"
+               ReferencedContainer = "container:MyProject.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A09499511E1D1CB600EFDE29"
-            BuildableName = "SphDemo.app"
-            BlueprintName = "SphDemo"
-            ReferencedContainer = "container:SphDemo.xcodeproj">
+            BuildableName = "MyProject.app"
+            BlueprintName = "MyProject"
+            ReferencedContainer = "container:MyProject.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
@@ -72,9 +72,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A09499651E1D1CB700EFDE29"
-               BuildableName = "SphDemoTests.xctest"
-               BlueprintName = "SphDemoTests"
-               ReferencedContainer = "container:SphDemo.xcodeproj">
+               BuildableName = "MyProjectTests.xctest"
+               BlueprintName = "MyProjectTests"
+               ReferencedContainer = "container:MyProject.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -82,9 +82,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A09499701E1D1CB700EFDE29"
-               BuildableName = "SphDemoUITests.xctest"
-               BlueprintName = "SphDemoUITests"
-               ReferencedContainer = "container:SphDemo.xcodeproj">
+               BuildableName = "MyProjectUITests.xctest"
+               BlueprintName = "MyProjectUITests"
+               ReferencedContainer = "container:MyProject.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -104,9 +104,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A09499511E1D1CB600EFDE29"
-            BuildableName = "SphDemo.app"
-            BlueprintName = "SphDemo"
-            ReferencedContainer = "container:SphDemo.xcodeproj">
+            BuildableName = "MyProject.app"
+            BlueprintName = "MyProject"
+            ReferencedContainer = "container:MyProject.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -121,9 +121,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A09499511E1D1CB600EFDE29"
-            BuildableName = "SphDemo.app"
-            BlueprintName = "SphDemo"
-            ReferencedContainer = "container:SphDemo.xcodeproj">
+            BuildableName = "MyProject.app"
+            BlueprintName = "MyProject"
+            ReferencedContainer = "container:MyProject.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

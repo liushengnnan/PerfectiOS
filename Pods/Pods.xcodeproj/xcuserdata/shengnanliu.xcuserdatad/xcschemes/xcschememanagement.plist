@@ -74,17 +74,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-SphDemo.xcscheme</key>
+		<key>Pods-MyProject.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-SphDemoTests.xcscheme</key>
+		<key>Pods-MyProjectTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-SphDemoUITests.xcscheme</key>
+		<key>Pods-MyProjectUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

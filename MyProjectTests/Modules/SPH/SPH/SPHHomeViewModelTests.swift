@@ -9,7 +9,7 @@
 import Quick
 import Nimble
 import RxSwift
-@testable import SphDemo
+@testable import MyProject
 
 class SPHHomeViewModelTests: QuickSpec {
     override func spec() {

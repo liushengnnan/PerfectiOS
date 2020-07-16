@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A09499701E1D1CB700EFDE29"
-               BuildableName = "SphDemoUITests.xctest"
-               BlueprintName = "SphDemoUITests"
-               ReferencedContainer = "container:SphDemo.xcodeproj">
+               BuildableName = "MyProjectUITests.xctest"
+               BlueprintName = "MyProjectUITests"
+               ReferencedContainer = "container:MyProject.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A09499701E1D1CB700EFDE29"
-               BuildableName = "SphDemoUITests.xctest"
-               BlueprintName = "SphDemoUITests"
-               ReferencedContainer = "container:SphDemo.xcodeproj">
+               BuildableName = "MyProjectUITests.xctest"
+               BlueprintName = "MyProjectUITests"
+               ReferencedContainer = "container:MyProject.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A09499701E1D1CB700EFDE29"
-            BuildableName = "SphDemoUITests.xctest"
-            BlueprintName = "SphDemoUITests"
-            ReferencedContainer = "container:SphDemo.xcodeproj">
+            BuildableName = "MyProjectUITests.xctest"
+            BlueprintName = "MyProjectUITests"
+            ReferencedContainer = "container:MyProject.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

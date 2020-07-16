@@ -10,7 +10,7 @@ import UIKit
 
 struct Configs {
     struct App {
-        static let bundleIdentifier = "com.liusn.SphDemo"
+        static let bundleIdentifier = "com.liusn.myproject"
     }
 
     struct Network {
