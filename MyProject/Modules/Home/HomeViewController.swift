@@ -31,11 +31,13 @@ class HomeViewController: TableViewController {
 
         tableView.register(R.nib.productTableViewCell)
         tableView.footRefreshControl = nil
+        tableView.contentInset.top = 200
 
-        contentView.addSubview(bannerView)
+        tableView.addSubview(bannerView)
         contentView.addSubview(cartButton)
         
         bannerView.snp.makeConstraints({ (make) in
+            make.top.equalToSuperview().inset(-200)
             make.width.equalTo(ScreenWidth)
             make.height.equalTo(200)
         })

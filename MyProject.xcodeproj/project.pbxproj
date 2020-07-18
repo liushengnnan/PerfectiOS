@@ -17,8 +17,6 @@
 		07FC337E1FFFE4E300D53888 /* LibsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC337B1FFFE4E300D53888 /* LibsManager.swift */; };
 		07FC33871FFFE68800D53888 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC33861FFFE68800D53888 /* Api.swift */; };
 		2C35184724C31D14008F2DF0 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35184624C31D14008F2DF0 /* Banner.swift */; };
-		2C35184A24C31DB1008F2DF0 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35184824C31DB1008F2DF0 /* BannerCollectionViewCell.swift */; };
-		2C35184B24C31DB1008F2DF0 /* BannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C35184924C31DB1008F2DF0 /* BannerCollectionViewCell.xib */; };
 		2C3B1BD824C0A22000F63F4C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B1BD724C0A22000F63F4C /* HomeViewController.swift */; };
 		2C3B1BDA24C0A24000F63F4C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B1BD924C0A24000F63F4C /* HomeViewModel.swift */; };
 		2C3B1BDD24C1E58C00F63F4C /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B1BDB24C1E58C00F63F4C /* ProductTableViewCell.swift */; };
@@ -100,8 +98,6 @@
 		09AB701278239F8FA64A2273 /* Pods-SphDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SphDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SphDemoTests/Pods-SphDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		0F7F0A78A83C798C4DBFBA20 /* Pods_MyProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C35184624C31D14008F2DF0 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
-		2C35184824C31DB1008F2DF0 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
-		2C35184924C31DB1008F2DF0 /* BannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCollectionViewCell.xib; sourceTree = "<group>"; };
 		2C3B1BD724C0A22000F63F4C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2C3B1BD924C0A24000F63F4C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		2C3B1BDB24C1E58C00F63F4C /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
@@ -250,8 +246,6 @@
 			isa = PBXGroup;
 			children = (
 				2C3B1BFF24C2FDD600F63F4C /* HomeBannerView.swift */,
-				2C35184824C31DB1008F2DF0 /* BannerCollectionViewCell.swift */,
-				2C35184924C31DB1008F2DF0 /* BannerCollectionViewCell.xib */,
 			);
 			path = Banner;
 			sourceTree = "<group>";
@@ -565,7 +559,6 @@
 			files = (
 				2C3B1BDE24C1E58C00F63F4C /* ProductTableViewCell.xib in Resources */,
 				C762C6881E1D5C3A00C09EBD /* Icons.xcassets in Resources */,
-				2C35184B24C31DB1008F2DF0 /* BannerCollectionViewCell.xib in Resources */,
 				0757B53A2166A6A000C04163 /* Localizable.strings in Resources */,
 				2C3B1BEB24C1E95900F63F4C /* CartItemTableViewCell.xib in Resources */,
 				2C3B1BF924C2005700F63F4C /* Cart.json in Resources */,
@@ -697,7 +690,7 @@
 			);
 			name = R.swift;
 			outputPaths = (
-				"$SRCROOT/MyProject/Resources/R.generated.swift",
+				$SRCROOT/MyProject/Resources/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -770,7 +763,6 @@
 				2C3B1BFB24C201CD00F63F4C /* Cart.swift in Sources */,
 				2C3B1BDA24C0A24000F63F4C /* HomeViewModel.swift in Sources */,
 				07FC337E1FFFE4E300D53888 /* LibsManager.swift in Sources */,
-				2C35184A24C31DB1008F2DF0 /* BannerCollectionViewCell.swift in Sources */,
 				07FC33871FFFE68800D53888 /* Api.swift in Sources */,
 				C762C66C1E1D559000C09EBD /* View.swift in Sources */,
 				2C3B1BE324C1E8BE00F63F4C /* CartViewController.swift in Sources */,

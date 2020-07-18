@@ -88,5 +88,7 @@ extension HomeBannerView: FSPagerViewDataSource {
 }
 
 extension HomeBannerView: FSPagerViewDelegate {
-
+    func pagerView(_ pagerView: FSPagerView, didSelectItemAt index: Int) {
+        print("Banner Click at: \(index)")
+    }
 }

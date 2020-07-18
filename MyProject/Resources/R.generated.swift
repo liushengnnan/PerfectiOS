@@ -179,22 +179,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 3 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
   struct nib {
-    /// Nib `BannerCollectionViewCell`.
-    static let bannerCollectionViewCell = _R.nib._BannerCollectionViewCell()
     /// Nib `CartItemTableViewCell`.
     static let cartItemTableViewCell = _R.nib._CartItemTableViewCell()
     /// Nib `ProductTableViewCell`.
     static let productTableViewCell = _R.nib._ProductTableViewCell()
-
-    #if os(iOS) || os(tvOS)
-    /// `UINib(name: "BannerCollectionViewCell", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.bannerCollectionViewCell) instead")
-    static func bannerCollectionViewCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.bannerCollectionViewCell)
-    }
-    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UINib(name: "CartItemTableViewCell", in: bundle)`
@@ -212,10 +202,6 @@ struct R: Rswift.Validatable {
     }
     #endif
 
-    static func bannerCollectionViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> BannerCollectionViewCell? {
-      return R.nib.bannerCollectionViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? BannerCollectionViewCell
-    }
-
     static func cartItemTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CartItemTableViewCell? {
       return R.nib.cartItemTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CartItemTableViewCell
     }
@@ -227,10 +213,8 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
   struct reuseIdentifier {
-    /// Reuse identifier `BannerCollectionViewCell`.
-    static let bannerCollectionViewCell: Rswift.ReuseIdentifier<BannerCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "BannerCollectionViewCell")
     /// Reuse identifier `CartItemTableViewCell`.
     static let cartItemTableViewCell: Rswift.ReuseIdentifier<CartItemTableViewCell> = Rswift.ReuseIdentifier(identifier: "CartItemTableViewCell")
     /// Reuse identifier `ProductTableViewCell`.
@@ -342,20 +326,6 @@ struct R: Rswift.Validatable {
 struct _R {
   #if os(iOS) || os(tvOS)
   struct nib {
-    struct _BannerCollectionViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
-      typealias ReusableType = BannerCollectionViewCell
-
-      let bundle = R.hostingBundle
-      let identifier = "BannerCollectionViewCell"
-      let name = "BannerCollectionViewCell"
-
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> BannerCollectionViewCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? BannerCollectionViewCell
-      }
-
-      fileprivate init() {}
-    }
-
     struct _CartItemTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
       typealias ReusableType = CartItemTableViewCell
 
