@@ -1,7 +1,8 @@
 PODS:
-  - Alamofire (5.1.0)
+  - Alamofire (5.2.2)
   - Differentiator (4.0.1)
   - DZNEmptyDataSet (1.8.1)
+  - FSPagerView (0.8.3)
   - Hero (1.5.0)
   - KafkaRefresh (1.4.8):
     - KafkaRefresh/Category (= 1.4.8)
@@ -39,9 +40,9 @@ PODS:
     - KafkaRefresh/Category
     - KafkaRefresh/Default
   - KeychainAccess (4.2.0)
-  - Kingfisher (5.14.0):
-    - Kingfisher/Core (= 5.14.0)
-  - Kingfisher/Core (5.14.0)
+  - Kingfisher (5.14.1):
+    - Kingfisher/Core (= 5.14.1)
+  - Kingfisher/Core (5.14.1)
   - Localize-Swift (3.1.0)
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
@@ -57,14 +58,14 @@ PODS:
   - Moya/RxSwift (14.0.0):
     - Moya/Core
     - RxSwift (~> 5.0)
-  - Nimble (8.0.8)
+  - Nimble (8.1.1)
   - "NSObject+Rx (5.1.0)":
     - RxSwift (~> 5.1)
   - NVActivityIndicatorView (4.8.0):
     - NVActivityIndicatorView/Presenter (= 4.8.0)
   - NVActivityIndicatorView/Presenter (4.8.0)
-  - ObjectMapper (3.5.2)
-  - Quick (2.2.0)
+  - ObjectMapper (4.2.0)
+  - Quick (2.2.1)
   - R.swift (5.2.2):
     - R.swift.Library (~> 5.2.0)
   - R.swift.Library (5.2.0)
@@ -95,7 +96,7 @@ PODS:
   - RxSwiftExt/RxCocoa (5.2.0):
     - RxCocoa (~> 5.0)
     - RxSwiftExt/Core
-  - RxTheme (4.0.0):
+  - RxTheme (4.1.1):
     - RxCocoa (~> 5.0)
     - RxSwift (~> 5.0)
   - RxViewController (1.0.0):
@@ -131,6 +132,7 @@ PODS:
 
 DEPENDENCIES:
   - DZNEmptyDataSet (~> 1.0)
+  - FSPagerView
   - Hero (from `https://github.com/HeroTransitions/Hero.git`, branch `develop`)
   - KafkaRefresh (~> 1.0)
   - KeychainAccess (~> 4.0)
@@ -160,6 +162,7 @@ SPEC REPOS:
     - Alamofire
     - Differentiator
     - DZNEmptyDataSet
+    - FSPagerView
     - KafkaRefresh
     - KeychainAccess
     - Kingfisher
@@ -195,25 +198,26 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Hero:
-    :commit: c70b471eeb91c5ac72d9d8e99affb9fbe0748b81
+    :commit: 6390a80b5c29f3ccd60e9e2c76ece04b6fe9dcac
     :git: https://github.com/HeroTransitions/Hero.git
 
 SPEC CHECKSUMS:
-  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   Hero: b7385b75e7259da62f4f85462f59a5082d66b058
   KafkaRefresh: aaae4ff23197f2ef38b6b22ca320740beac4bbb4
   KeychainAccess: 3f760109aa99b05d0f231e28b22642da7153e38a
-  Kingfisher: 7b64389a43139c903ec434788344c288217c792d
+  Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
   Localize-Swift: 4bed4f0ccac8be2ec3517ee359da80ba2adb0fae
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   Moya-ObjectMapper: 967a99d9ea3aa9c93ddbe112aeca3667f53bfe93
-  Nimble: 2da33c44adfde49552d4a6b3ef16039a45bf8dca
+  Nimble: 5f8a2fb6fa343a7242dfdd9d42f7267419d464b2
   "NSObject+Rx": fa6bbcc1ab1faa06b01466bc09b1e0692bbc5946
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
-  ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
-  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
   R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
   R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
   RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
@@ -225,12 +229,12 @@ SPEC CHECKSUMS:
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   RxSwiftExt: 4ca80336f43c28f11a2825cdd2fc61dd6c044697
-  RxTheme: 0b642f47c7d197a803c6b9c083964188c34f7ddb
+  RxTheme: 7cda2f036363a0b620cf07b3480cbbbbb00c1d25
   RxViewController: 7330a46e5c31cd680db169da4c9fc8676e975a81
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: f53a3d673f8d56f9e75230152626ced287fa0e78
+PODFILE CHECKSUM: 264ee5b2d15d25ac9a7964ff538d6ad82be641a0
 
 COCOAPODS: 1.9.3

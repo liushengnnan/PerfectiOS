@@ -37,7 +37,8 @@ target 'MyProject' do
     pod 'Localize-Swift', '~> 3.0'  # https://github.com/marmelroy/Localize-Swift
     pod 'KafkaRefresh', '~> 1.0'  # https://github.com/OpenFeyn/KafkaRefresh
     pod 'Toast-Swift', '~> 5.0'  # https://github.com/scalessec/Toast-Swift
-    
+    pod 'FSPagerView'
+
     # Auto Layout
     pod 'SnapKit', '~> 5.0'  # https://github.com/SnapKit/SnapKit
 

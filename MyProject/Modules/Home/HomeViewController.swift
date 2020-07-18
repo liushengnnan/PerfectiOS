@@ -11,7 +11,7 @@ import RxDataSources
 
 private let reuseIdentifier = R.reuseIdentifier.productTableViewCell.identifier
 class HomeViewController: TableViewController {
-
+    lazy var bannerView = HomeBannerView()
     lazy var cartButton: Button = {
         let view = Button()
         view.imageForNormal = R.image.icon_cart()
@@ -20,11 +20,6 @@ class HomeViewController: TableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-//        cartButton.rx.tap.asObservable().subscribe(onNext: { [weak self] () in
-//            let viewModel = CartViewModel(provider: self?.provider as! NetAPI)
-//            self?.navigator.show(segue: .cart(viewModel: viewModel), sender: self, transition: .navigation(type: .fade))
-//        }).disposed(by: rx.disposeBag)
     }
 
     override func makeUI() {
@@ -37,7 +32,13 @@ class HomeViewController: TableViewController {
         tableView.register(R.nib.productTableViewCell)
         tableView.footRefreshControl = nil
 
+        contentView.addSubview(bannerView)
         contentView.addSubview(cartButton)
+        
+        bannerView.snp.makeConstraints({ (make) in
+            make.width.equalTo(ScreenWidth)
+            make.height.equalTo(200)
+        })
         cartButton.snp.makeConstraints({ (make) in
             make.size.equalTo(44)
             make.right.equalToSuperview().inset(16)
