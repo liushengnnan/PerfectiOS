@@ -1,0 +1,41 @@
+{
+   "count":5,
+   "success":true,
+   "productList":[
+      {
+         "imageUrl":"https://media-cdn.tripadvisor.com/media/photo-p/19/9b/dc/62/parma-burrata-pizza-with.jpg",
+         "title":"pizza",
+         "detail":"Vegetarian Friendly, Vegan Options",
+         "secondDetail":"Italian, Pizza, European, Neapolitan, Campania, Southern-Italian",
+         "price":"15 SGD"
+      },
+      {
+         "imageUrl":"https://media-cdn.tripadvisor.com/media/photo-p/19/9b/dc/62/parma-burrata-pizza-with.jpg",
+         "title":"pizza",
+         "detail":"Vegetarian Friendly, Vegan Options",
+         "secondDetail":"Italian, Pizza, European, Neapolitan, Campania, Southern-Italian",
+         "price":"15 SGD"
+      },
+      {
+         "imageUrl":"https://media-cdn.tripadvisor.com/media/photo-p/19/9b/dc/62/parma-burrata-pizza-with.jpg",
+         "title":"pizza",
+         "detail":"Vegetarian Friendly, Vegan Options",
+         "secondDetail":"Italian, Pizza, European, Neapolitan, Campania, Southern-Italian",
+         "price":"15 SGD"
+      },
+      {
+         "imageUrl":"https://media-cdn.tripadvisor.com/media/photo-p/19/9b/dc/62/parma-burrata-pizza-with.jpg",
+         "title":"pizza",
+         "detail":"Vegetarian Friendly, Vegan Options",
+         "secondDetail":"Italian, Pizza, European, Neapolitan, Campania, Southern-Italian",
+         "price":"15 SGD"
+      },
+      {
+         "imageUrl":"https://media-cdn.tripadvisor.com/media/photo-p/19/9b/dc/62/parma-burrata-pizza-with.jpg",
+         "title":"pizza",
+         "detail":"Vegetarian Friendly, Vegan Options",
+         "secondDetail":"Italian, Pizza, European, Neapolitan, Campania, Southern-Italian",
+         "price":"15 SGD"
+      }
+   ]
+}

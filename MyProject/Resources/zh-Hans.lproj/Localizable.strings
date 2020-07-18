@@ -1,0 +1,9 @@
+/* Localizable.strings
+
+/* 共同 */
+"Common.NoResults" = "没有结果";
+/* Toast */
+"Toast.ConnectionBack.Message" = "连接已恢复";
+"Toast.ConnectionLost.Message" = "没有连接";
+/* Home */
+"Home.Title" = " 首页";
