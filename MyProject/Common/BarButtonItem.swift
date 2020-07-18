@@ -1,9 +1,9 @@
 //
 //  BarButtonItem.swift
-//  SwiftHub
+//  MyProject
 //
-//  Created by Khoren Markosyan on 1/4/17.
-//  Copyright © 2017 Khoren Markosyan. All rights reserved.
+//  Created by Liusn on 1/4/17.
+//  Copyright © 2020 Liusn. All rights reserved.
 //
 
 import UIKit

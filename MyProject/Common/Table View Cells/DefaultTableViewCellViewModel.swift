@@ -1,6 +1,6 @@
 //
 //  DefaultTableViewCellViewModel.swift
-//  SwiftHub
+//  MyProject
 //
 //  Created by Sygnoos9 on 6/23/19.
 //  Copyright © 2019 Khoren Markosyan. All rights reserved.

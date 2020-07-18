@@ -1,9 +1,9 @@
 //
 //  TableViewCell.swift
-//  SwiftHub
+//  MyProject
 //
-//  Created by Khoren Markosyan on 1/4/17.
-//  Copyright © 2017 Khoren Markosyan. All rights reserved.
+//  Created by Liusn on 1/4/17.
+//  Copyright © 2020 Liusn. All rights reserved.
 //
 
 import UIKit
@@ -35,7 +35,7 @@ class TableViewCell: UITableViewCell {
     lazy var stackView: StackView = {
         let subviews: [UIView] = []
         let view = StackView(arrangedSubviews: subviews)
-        view.axis = .horizontal
+        view.axis = .vertical
         view.alignment = .center
         self.containerView.addSubview(view)
         view.snp.makeConstraints({ (make) in

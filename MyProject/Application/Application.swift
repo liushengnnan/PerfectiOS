@@ -1,9 +1,9 @@
 //
 //  Application.swift
-//  SwiftHub
+//  MyProject
 //
-//  Created by Khoren Markosyan on 1/5/18.
-//  Copyright © 2018 Khoren Markosyan. All rights reserved.
+//  Created by Liusn on 1/5/18.
+//  Copyright © 2020 Liusn. All rights reserved..
 //
 
 import UIKit
@@ -23,9 +23,8 @@ final class Application: NSObject {
     }
 
     private func updateProvider() {
-        let staging = Configs.Network.useStaging
-        let sphProvider = staging ? SphNetworking.stubbingNetworking(): SphNetworking.defaultNetworking()
-        let restApi = RestApi(sphProvider: sphProvider)
+        let myProvider = MyNetworking.stubbingNetworking()
+        let restApi = RestApi(provider: myProvider)
         provider = restApi
     }
 
@@ -39,7 +38,7 @@ final class Application: NSObject {
     func presentMainScreen(in window: UIWindow?) {
         guard let window = window, let provider = provider else { return }
         let id = "a807b7ab-6cad-4aa6-87d0-e283a7353a0f"
-        let viewModel = SPHHomeViewModel(id: id, provider: provider)
-        navigator.show(segue: .sphHome(viewModel: viewModel), sender: nil, transition: .root(in: window))
+        let viewModel = HomeViewModel(id: id, provider: provider)
+        navigator.show(segue: .home(viewModel: viewModel), sender: nil, transition: .root(in: window))
     }
 }

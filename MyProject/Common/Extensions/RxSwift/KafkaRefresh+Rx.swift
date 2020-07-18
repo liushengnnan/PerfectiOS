@@ -1,9 +1,9 @@
 //
 //  KafkaRefresh+Rx.swift
-//  SwiftHub
+//  MyProject
 //
-//  Created by Khoren Markosyan on 7/24/18.
-//  Copyright © 2018 Khoren Markosyan. All rights reserved.
+//  Created by Liusn on 7/24/18.
+//  Copyright © 2020 Liusn. All rights reserved..
 //
 
 import Foundation

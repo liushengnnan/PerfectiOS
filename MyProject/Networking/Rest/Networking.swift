@@ -1,9 +1,9 @@
 //
 //  Networking.swift
-//  SwiftHub
+//  MyProject
 //
-//  Created by Khoren Markosyan on 1/4/17.
-//  Copyright © 2017 Khoren Markosyan. All rights reserved.
+//  Created by Liusn on 1/4/17.
+//  Copyright © 2020 Liusn. All rights reserved.
 //
 
 import Foundation
@@ -51,21 +51,6 @@ protocol NetworkingType {
     static func stubbingNetworking() -> Self
 }
 
-struct SphNetworking: NetworkingType {
-    typealias T = SphApi
-    let provider: OnlineProvider<T>
-    static func defaultNetworking() -> Self {
-        return SphNetworking(provider: newProvider(plugins))
-    }
-    static func stubbingNetworking() -> Self {
-        return SphNetworking(provider: OnlineProvider(endpointClosure: endpointsClosure(), requestClosure: SphNetworking.endpointResolver(), stubClosure: MoyaProvider.immediatelyStub, online: .just(true)))
-    }
-    func request(_ token: T) -> Observable<Moya.Response> {
-        let actualRequest = self.provider.request(token)
-        return actualRequest
-    }
-}
-
 extension NetworkingType {
     static func endpointsClosure<T>(_ xAccessToken: String? = nil) -> (T) -> Endpoint where T: TargetType {
         return { target in
@@ -103,10 +88,10 @@ extension NetworkingType {
     }
 }
 
-private func newProvider<T>(_ plugins: [PluginType], xAccessToken: String? = nil) -> OnlineProvider<T> {
-    return OnlineProvider(endpointClosure: SphNetworking.endpointsClosure(xAccessToken),
-                          requestClosure: SphNetworking.endpointResolver(),
-                          stubClosure: SphNetworking.APIKeysBasedStubBehaviour,
+func newProvider<T>(_ plugins: [PluginType], xAccessToken: String? = nil) -> OnlineProvider<T> {
+    return OnlineProvider(endpointClosure: MyNetworking.endpointsClosure(xAccessToken),
+                          requestClosure: MyNetworking.endpointResolver(),
+                          stubClosure: MyNetworking.APIKeysBasedStubBehaviour,
                           plugins: plugins)
 }
 

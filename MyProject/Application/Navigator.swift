@@ -1,9 +1,9 @@
 //
 //  Navigator.swift
-//  SwiftHub
+//  MyProject
 //
-//  Created by Khoren Markosyan on 1/5/18.
-//  Copyright © 2018 Khoren Markosyan. All rights reserved.
+//  Created by Liusn on 1/5/18.
+//  Copyright © 2020 Liusn. All rights reserved..
 //
 
 import Foundation
@@ -23,9 +23,10 @@ class Navigator {
 
     // MARK: - segues list, all app scenes
     enum Scene {
-        case sphHome(viewModel: SPHHomeViewModel)
         case safari(URL)
         case safariController(URL)
+        case home(viewModel: HomeViewModel)
+        case cart(viewModel: CartViewModel)
     }
 
     enum Transition {
@@ -41,16 +42,18 @@ class Navigator {
     // MARK: - get a single VC
     func get(segue: Scene) -> UIViewController? {
         switch segue {
-        case .sphHome(let viewModel):
-            let homeVC = SPHHomeViewController(viewModel: viewModel, navigator: self)
-            let nvc = NavigationController(rootViewController: homeVC)
-            return nvc
         case .safari(let url):
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
             return nil
         case .safariController(let url):
             let vc = SFSafariViewController(url: url)
             return vc
+        case .home(viewModel: let viewModel):
+            let homeVC = HomeViewController(viewModel: viewModel, navigator: self)
+            let nvc = NavigationController(rootViewController: homeVC)
+            return nvc
+        case .cart(viewModel: let viewModel):
+            return CartViewController(viewModel: viewModel, navigator: self)
         }
     }
 

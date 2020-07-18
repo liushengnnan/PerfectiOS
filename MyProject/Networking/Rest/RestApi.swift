@@ -1,6 +1,6 @@
 //
 //  RestApi.swift
-//  SwiftHub
+//  MyProject
 //
 //  Created by Sygnoos9 on 3/9/19.
 //  Copyright © 2019 Khoren Markosyan. All rights reserved.
@@ -17,23 +17,27 @@ import Alamofire
 typealias MoyaError = Moya.MoyaError
 
 class RestApi: NetAPI {
-    let sphProvider: SphNetworking
-    init(sphProvider: SphNetworking) {
-        self.sphProvider = sphProvider
+    let provider: MyNetworking
+    init(provider: MyNetworking) {
+        self.provider = provider
     }
 }
 
 extension RestApi {
-    private func sphRequestObject<T: BaseMappable>(_ target: SphApi, type: T.Type) -> Single<T> {
-        return sphProvider.request(target)
+    private func myRequestObject<T: BaseMappable>(_ target: MyApi, type: T.Type) -> Single<T> {
+        return provider.request(target)
             .mapObject(T.self)
             .observeOn(MainScheduler.instance)
             .asSingle()
     }
 }
 
-extension RestApi: SphApiProtocol {
-    func datastoreSearch(id: String, limit: Int?, quary: String?) -> Single<Sph> {
-        return sphRequestObject(.datastoreSearch(id: id, limit: limit, quary: quary), type: Sph.self)
+extension RestApi: MyApiProtocol {
+    func productList(store: String, limit: Int?) -> Single<Products> {
+        return myRequestObject(.productList(store: store, limit: limit), type: Products.self)
+    }
+
+    func cart() -> Single<Cart> {
+        return myRequestObject(.cart, type: Cart.self)
     }
 }

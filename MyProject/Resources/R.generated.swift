@@ -88,22 +88,32 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
 
-  /// This `R.file` struct is generated, and contains static references to 1 files.
+  /// This `R.file` struct is generated, and contains static references to 2 files.
   struct file {
-    /// Resource file `Sph.json`.
-    static let sphJson = Rswift.FileResource(bundle: R.hostingBundle, name: "Sph", pathExtension: "json")
+    /// Resource file `Cart.json`.
+    static let cartJson = Rswift.FileResource(bundle: R.hostingBundle, name: "Cart", pathExtension: "json")
+    /// Resource file `ProductList.json`.
+    static let productListJson = Rswift.FileResource(bundle: R.hostingBundle, name: "ProductList", pathExtension: "json")
 
-    /// `bundle.url(forResource: "Sph", withExtension: "json")`
-    static func sphJson(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.sphJson
+    /// `bundle.url(forResource: "Cart", withExtension: "json")`
+    static func cartJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.cartJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "ProductList", withExtension: "json")`
+    static func productListJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.productListJson
       return fileResource.bundle.url(forResource: fileResource)
     }
 
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 6 images.
+  /// This `R.image` struct is generated, and contains static references to 7 images.
   struct image {
+    /// Image `icon_cart`.
+    static let icon_cart = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_cart")
     /// Image `icon_cell_check`.
     static let icon_cell_check = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_cell_check")
     /// Image `icon_cell_star`.
@@ -116,6 +126,13 @@ struct R: Rswift.Validatable {
     static let image_no_result = Rswift.ImageResource(bundle: R.hostingBundle, name: "image_no_result")
     /// Image `launch_image`.
     static let launch_image = Rswift.ImageResource(bundle: R.hostingBundle, name: "launch_image")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "icon_cart", bundle: ..., traitCollection: ...)`
+    static func icon_cart(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.icon_cart, compatibleWith: traitCollection)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIImage(named: "icon_cell_check", bundle: ..., traitCollection: ...)`
@@ -162,30 +179,46 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
   struct nib {
-    /// Nib `SPHHomeCell`.
-    static let sphHomeCell = _R.nib._SPHHomeCell()
+    /// Nib `CartItemTableViewCell`.
+    static let cartItemTableViewCell = _R.nib._CartItemTableViewCell()
+    /// Nib `ProductTableViewCell`.
+    static let productTableViewCell = _R.nib._ProductTableViewCell()
 
     #if os(iOS) || os(tvOS)
-    /// `UINib(name: "SPHHomeCell", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.sphHomeCell) instead")
-    static func sphHomeCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.sphHomeCell)
+    /// `UINib(name: "CartItemTableViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.cartItemTableViewCell) instead")
+    static func cartItemTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.cartItemTableViewCell)
     }
     #endif
 
-    static func sphHomeCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> SPHHomeCell? {
-      return R.nib.sphHomeCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? SPHHomeCell
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "ProductTableViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.productTableViewCell) instead")
+    static func productTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.productTableViewCell)
+    }
+    #endif
+
+    static func cartItemTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CartItemTableViewCell? {
+      return R.nib.cartItemTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CartItemTableViewCell
+    }
+
+    static func productTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ProductTableViewCell? {
+      return R.nib.productTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ProductTableViewCell
     }
 
     fileprivate init() {}
   }
 
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
   struct reuseIdentifier {
-    /// Reuse identifier `SPHHomeCell`.
-    static let sphHomeCell: Rswift.ReuseIdentifier<SPHHomeCell> = Rswift.ReuseIdentifier(identifier: "SPHHomeCell")
+    /// Reuse identifier `CartItemTableViewCell`.
+    static let cartItemTableViewCell: Rswift.ReuseIdentifier<CartItemTableViewCell> = Rswift.ReuseIdentifier(identifier: "CartItemTableViewCell")
+    /// Reuse identifier `ProductTableViewCell`.
+    static let productTableViewCell: Rswift.ReuseIdentifier<ProductTableViewCell> = Rswift.ReuseIdentifier(identifier: "ProductTableViewCell")
 
     fileprivate init() {}
   }
@@ -201,7 +234,7 @@ struct R: Rswift.Validatable {
       /// en translation: Home
       ///
       /// Locales: en, zh-Hans
-      static let sphHome = Rswift.StringResource(key: "SPH.Home", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "zh-Hans"], comment: nil)
+      static let homeTitle = Rswift.StringResource(key: "Home.Title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "zh-Hans"], comment: nil)
       /// en translation: No Results
       ///
       /// Locales: en, zh-Hans
@@ -229,16 +262,16 @@ struct R: Rswift.Validatable {
       /// en translation: Home
       ///
       /// Locales: en, zh-Hans
-      static func sphHome(preferredLanguages: [String]? = nil) -> String {
+      static func homeTitle(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
-          return NSLocalizedString("SPH.Home", bundle: hostingBundle, comment: "")
+          return NSLocalizedString("Home.Title", bundle: hostingBundle, comment: "")
         }
 
         guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
-          return "SPH.Home"
+          return "Home.Title"
         }
 
-        return NSLocalizedString("SPH.Home", bundle: bundle, comment: "")
+        return NSLocalizedString("Home.Title", bundle: bundle, comment: "")
       }
 
       /// en translation: No Results
@@ -293,15 +326,29 @@ struct R: Rswift.Validatable {
 struct _R {
   #if os(iOS) || os(tvOS)
   struct nib {
-    struct _SPHHomeCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
-      typealias ReusableType = SPHHomeCell
+    struct _CartItemTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = CartItemTableViewCell
 
       let bundle = R.hostingBundle
-      let identifier = "SPHHomeCell"
-      let name = "SPHHomeCell"
+      let identifier = "CartItemTableViewCell"
+      let name = "CartItemTableViewCell"
 
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> SPHHomeCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? SPHHomeCell
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CartItemTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CartItemTableViewCell
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _ProductTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = ProductTableViewCell
+
+      let bundle = R.hostingBundle
+      let identifier = "ProductTableViewCell"
+      let name = "ProductTableViewCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ProductTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ProductTableViewCell
       }
 
       fileprivate init() {}

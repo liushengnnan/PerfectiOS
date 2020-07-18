@@ -2,7 +2,7 @@
 //  Observable+Operators.swift
 //  Cake Builder
 //
-//  Created by Khoren Markosyan on 10/19/16.
+//  Created by Liusn on 10/19/16.
 //  Copyright © 2016 Khoren Markosyan. All rights reserved.
 //
 

@@ -1,6 +1,6 @@
 //
 //  TableViewCellViewModel.swift
-//  SwiftHub
+//  MyProject
 //
 //  Created by Sygnoos9 on 5/12/20.
 

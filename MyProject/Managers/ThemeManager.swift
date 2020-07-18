@@ -1,9 +1,9 @@
 //
 //  ThemeManager.swift
-//  SwiftHub
+//  MyProject
 //
 //  Created by Sygnoos9 on 7/21/18.
-//  Copyright © 2018 Khoren Markosyan. All rights reserved.
+//  Copyright © 2020 Liusn. All rights reserved..
 //
 
 import UIKit

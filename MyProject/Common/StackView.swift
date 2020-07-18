@@ -1,9 +1,9 @@
 //
 //  StackView.swift
-//  SwiftHub
+//  MyProject
 //
-//  Created by Khoren Markosyan on 6/26/18.
-//  Copyright © 2018 Khoren Markosyan. All rights reserved.
+//  Created by Liusn on 6/26/18.
+//  Copyright © 2020 Liusn. All rights reserved..
 //
 
 import UIKit

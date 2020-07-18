@@ -5,5 +5,5 @@
 /* Toast */
 "Toast.ConnectionBack.Message" = "Back online";
 "Toast.ConnectionLost.Message" = "No connection";
-/* SPH */
-"SPH.Home" = "Home";
+/* Home */
+"Home.Title" = "Home";

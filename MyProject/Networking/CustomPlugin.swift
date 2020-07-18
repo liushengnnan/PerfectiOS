@@ -1,6 +1,6 @@
 //
 //  CustomPlugin.swift
-//  SwiftHub
+//  MyProject
 //
 //  Created by shengnan liu on 15/5/20.
 //  Copyright © 2020 Khoren Markosyan. All rights reserved.
