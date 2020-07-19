@@ -17,8 +17,6 @@ class CartItemCellViewModel: TableViewCellViewModel {
     let attributedDetail = BehaviorRelay<NSAttributedString?>(value: nil)
     let image = BehaviorRelay<UIImage?>(value: nil)
     let imageUrl = BehaviorRelay<String?>(value: nil)
-    let badge = BehaviorRelay<UIImage?>(value: nil)
-    let badgeColor = BehaviorRelay<UIColor?>(value: nil)
 
     let item: CartItem
     init(with item: CartItem) {

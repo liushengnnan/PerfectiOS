@@ -7,3 +7,8 @@
 "Toast.ConnectionLost.Message" = "No connection";
 /* Home */
 "Home.Title" = "Home";
+
+"Cart.Title" = "Cart";
+
+"Checkout.Title" = "Check out";
+

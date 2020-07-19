@@ -225,12 +225,20 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 4 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 6 localization keys.
     struct localizable {
       /// en translation: Back online
       ///
       /// Locales: en, zh-Hans
       static let toastConnectionBackMessage = Rswift.StringResource(key: "Toast.ConnectionBack.Message", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "zh-Hans"], comment: nil)
+      /// en translation: Cart
+      ///
+      /// Locales: en, zh-Hans
+      static let cartTitle = Rswift.StringResource(key: "Cart.Title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "zh-Hans"], comment: nil)
+      /// en translation: Check out
+      ///
+      /// Locales: en, zh-Hans
+      static let checkoutTitle = Rswift.StringResource(key: "Checkout.Title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "zh-Hans"], comment: nil)
       /// en translation: Home
       ///
       /// Locales: en, zh-Hans
@@ -257,6 +265,36 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("Toast.ConnectionBack.Message", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Cart
+      ///
+      /// Locales: en, zh-Hans
+      static func cartTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("Cart.Title", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "Cart.Title"
+        }
+
+        return NSLocalizedString("Cart.Title", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Check out
+      ///
+      /// Locales: en, zh-Hans
+      static func checkoutTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("Checkout.Title", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "Checkout.Title"
+        }
+
+        return NSLocalizedString("Checkout.Title", bundle: bundle, comment: "")
       }
 
       /// en translation: Home

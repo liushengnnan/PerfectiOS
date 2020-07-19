@@ -63,13 +63,10 @@ class ProductTableViewCell: TableViewCell {
     lazy var detailStackView: StackView = {
         let views: [UIView] = [self.detailLabel, self.followButton]
         let view = StackView(arrangedSubviews: views)
-//        view.spacing = 2
         view.alignment = .fill
         view.axis = .horizontal
         return view
     }()
-
-
 
     override func makeUI() {
         super.makeUI()

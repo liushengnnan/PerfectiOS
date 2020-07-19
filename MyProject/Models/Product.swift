@@ -15,7 +15,6 @@ struct Product: Mappable {
     var detail: String?
     var secondDetail: String?
     var price: String?
-    var isCarted: Bool = false
 
     init?(map: Map) {}
     init() {}

@@ -17,6 +17,8 @@
 		07FC337E1FFFE4E300D53888 /* LibsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC337B1FFFE4E300D53888 /* LibsManager.swift */; };
 		07FC33871FFFE68800D53888 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC33861FFFE68800D53888 /* Api.swift */; };
 		2C35184724C31D14008F2DF0 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35184624C31D14008F2DF0 /* Banner.swift */; };
+		2C35184E24C47780008F2DF0 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35184D24C47780008F2DF0 /* CheckoutViewController.swift */; };
+		2C35185024C47794008F2DF0 /* CheckoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35184F24C47794008F2DF0 /* CheckoutViewModel.swift */; };
 		2C3B1BD824C0A22000F63F4C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B1BD724C0A22000F63F4C /* HomeViewController.swift */; };
 		2C3B1BDA24C0A24000F63F4C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B1BD924C0A24000F63F4C /* HomeViewModel.swift */; };
 		2C3B1BDD24C1E58C00F63F4C /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B1BDB24C1E58C00F63F4C /* ProductTableViewCell.swift */; };
@@ -98,6 +100,8 @@
 		09AB701278239F8FA64A2273 /* Pods-SphDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SphDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SphDemoTests/Pods-SphDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		0F7F0A78A83C798C4DBFBA20 /* Pods_MyProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C35184624C31D14008F2DF0 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		2C35184D24C47780008F2DF0 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		2C35184F24C47794008F2DF0 /* CheckoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewModel.swift; sourceTree = "<group>"; };
 		2C3B1BD724C0A22000F63F4C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2C3B1BD924C0A24000F63F4C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		2C3B1BDB24C1E58C00F63F4C /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
@@ -225,6 +229,7 @@
 		07FC33741FFFD46D00D53888 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				2C35184C24C47738008F2DF0 /* Checkout */,
 				2C35184524C31BB0008F2DF0 /* Banner */,
 				2C3B1BE124C1E88E00F63F4C /* Cart */,
 				2C3B1BD624C0A1EF00F63F4C /* Home */,
@@ -248,6 +253,15 @@
 				2C3B1BFF24C2FDD600F63F4C /* HomeBannerView.swift */,
 			);
 			path = Banner;
+			sourceTree = "<group>";
+		};
+		2C35184C24C47738008F2DF0 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				2C35184D24C47780008F2DF0 /* CheckoutViewController.swift */,
+				2C35184F24C47794008F2DF0 /* CheckoutViewModel.swift */,
+			);
+			path = Checkout;
 			sourceTree = "<group>";
 		};
 		2C3B1BD624C0A1EF00F63F4C /* Home */ = {
@@ -764,6 +778,7 @@
 				2C3B1BDA24C0A24000F63F4C /* HomeViewModel.swift in Sources */,
 				07FC337E1FFFE4E300D53888 /* LibsManager.swift in Sources */,
 				07FC33871FFFE68800D53888 /* Api.swift in Sources */,
+				2C35185024C47794008F2DF0 /* CheckoutViewModel.swift in Sources */,
 				C762C66C1E1D559000C09EBD /* View.swift in Sources */,
 				2C3B1BE324C1E8BE00F63F4C /* CartViewController.swift in Sources */,
 				0751F7AA246B044800E42751 /* TableViewCellViewModel.swift in Sources */,
@@ -785,6 +800,7 @@
 				A09DE8D720E7C2C400F6F2BF /* ActivityIndicator.swift in Sources */,
 				2CA94056246EAD350034E346 /* CustomPlugin.swift in Sources */,
 				A00C54C920E25B5A00DA5F98 /* StackView.swift in Sources */,
+				2C35184E24C47780008F2DF0 /* CheckoutViewController.swift in Sources */,
 				2C3B1BF524C1F7BD00F63F4C /* MyApi.swift in Sources */,
 				2C3B1C0024C2FDD600F63F4C /* HomeBannerView.swift in Sources */,
 				C762C65F1E1D559000C09EBD /* BarButtonItem.swift in Sources */,

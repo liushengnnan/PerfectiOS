@@ -17,9 +17,6 @@ class ProductCellViewModel: TableViewCellViewModel {
     let attributedDetail = BehaviorRelay<NSAttributedString?>(value: nil)
     let image = BehaviorRelay<UIImage?>(value: nil)
     let imageUrl = BehaviorRelay<String?>(value: nil)
-    let badge = BehaviorRelay<UIImage?>(value: nil)
-    let badgeColor = BehaviorRelay<UIColor?>(value: nil)
-    let isCarted = BehaviorRelay<Bool>(value: false)
 
     var product: Product
     init(with product: Product) {
@@ -29,6 +26,5 @@ class ProductCellViewModel: TableViewCellViewModel {
         title.accept(product.title)
         detail.accept(product.detail)
         secondDetail.accept(product.secondDetail)
-        isCarted.accept(product.isCarted)
     }
 }

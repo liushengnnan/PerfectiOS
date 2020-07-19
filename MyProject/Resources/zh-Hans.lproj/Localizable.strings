@@ -6,4 +6,7 @@
 "Toast.ConnectionBack.Message" = "连接已恢复";
 "Toast.ConnectionLost.Message" = "没有连接";
 /* Home */
-"Home.Title" = " 首页";
+"Home.Title" = "首页";
+"Cart.Title" = "购物车";
+
+"Checkout.Title" = "确认订单";
