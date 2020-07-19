@@ -27,4 +27,8 @@ class ProductCellViewModel: TableViewCellViewModel {
         detail.accept(product.detail)
         secondDetail.accept(product.secondDetail)
     }
+
+    func requset() {
+        print("send add cart request")
+    }
 }

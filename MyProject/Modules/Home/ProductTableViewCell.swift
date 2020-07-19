@@ -47,7 +47,7 @@ class ProductTableViewCell: TableViewCell {
         return view
     }()
 
-    lazy var followButton: Button = {
+    lazy var addButton: Button = {
         let view = Button()
         view.borderColor = .white
         view.borderWidth = Configs.BaseDimensions.borderWidth
@@ -61,7 +61,7 @@ class ProductTableViewCell: TableViewCell {
     }()
 
     lazy var detailStackView: StackView = {
-        let views: [UIView] = [self.detailLabel, self.followButton]
+        let views: [UIView] = [self.detailLabel, self.addButton]
         let view = StackView(arrangedSubviews: views)
         view.alignment = .fill
         view.axis = .horizontal
@@ -109,11 +109,9 @@ class ProductTableViewCell: TableViewCell {
                 self?.productImageView.hero.id = url
             }).disposed(by: rx.disposeBag)
 
-        viewModel.isCarted.asDriver().map { (followed) -> String? in
-            let title = followed ? viewModel.product.price : "added +1"
-            return title
-            }.drive(followButton.rx.title()).disposed(by: rx.disposeBag)
-        viewModel.isCarted.map { $0 ? 1.0: 0.6 }.asDriver(onErrorJustReturn: 0).drive(followButton.rx.alpha).disposed(by: rx.disposeBag)
+        addButton.rx.tap.asDriver().drive(onNext: { _ in
+                viewModel.requset()
+            }).disposed(by: rx.disposeBag)
     }
     
 }

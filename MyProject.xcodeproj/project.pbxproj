@@ -19,6 +19,8 @@
 		2C35184724C31D14008F2DF0 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35184624C31D14008F2DF0 /* Banner.swift */; };
 		2C35184E24C47780008F2DF0 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35184D24C47780008F2DF0 /* CheckoutViewController.swift */; };
 		2C35185024C47794008F2DF0 /* CheckoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35184F24C47794008F2DF0 /* CheckoutViewModel.swift */; };
+		2C35185224C48D31008F2DF0 /* addToCart.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C35185124C48D31008F2DF0 /* addToCart.json */; };
+		2C35185424C48E1F008F2DF0 /* AddToCartApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35185324C48E1F008F2DF0 /* AddToCartApi.swift */; };
 		2C3B1BD824C0A22000F63F4C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B1BD724C0A22000F63F4C /* HomeViewController.swift */; };
 		2C3B1BDA24C0A24000F63F4C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B1BD924C0A24000F63F4C /* HomeViewModel.swift */; };
 		2C3B1BDD24C1E58C00F63F4C /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B1BDB24C1E58C00F63F4C /* ProductTableViewCell.swift */; };
@@ -102,6 +104,8 @@
 		2C35184624C31D14008F2DF0 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		2C35184D24C47780008F2DF0 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		2C35184F24C47794008F2DF0 /* CheckoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewModel.swift; sourceTree = "<group>"; };
+		2C35185124C48D31008F2DF0 /* addToCart.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = addToCart.json; sourceTree = "<group>"; };
+		2C35185324C48E1F008F2DF0 /* AddToCartApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartApi.swift; sourceTree = "<group>"; };
 		2C3B1BD724C0A22000F63F4C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2C3B1BD924C0A24000F63F4C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		2C3B1BDB24C1E58C00F63F4C /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 				2C3B1BF624C1F8DD00F63F4C /* MyNetworking.swift */,
 				07F9E466223405410012BA6D /* RestApi.swift */,
 				2C3B1BF424C1F7BD00F63F4C /* MyApi.swift */,
+				2C35185324C48E1F008F2DF0 /* AddToCartApi.swift */,
 			);
 			path = Rest;
 			sourceTree = "<group>";
@@ -355,6 +360,7 @@
 			children = (
 				2C3B1BF224C1F2B500F63F4C /* ProductList.json */,
 				2C3B1BF824C2005700F63F4C /* Cart.json */,
+				2C35185124C48D31008F2DF0 /* addToCart.json */,
 			);
 			path = "Stubbed Responses";
 			sourceTree = "<group>";
@@ -575,6 +581,7 @@
 				C762C6881E1D5C3A00C09EBD /* Icons.xcassets in Resources */,
 				0757B53A2166A6A000C04163 /* Localizable.strings in Resources */,
 				2C3B1BEB24C1E95900F63F4C /* CartItemTableViewCell.xib in Resources */,
+				2C35185224C48D31008F2DF0 /* addToCart.json in Resources */,
 				2C3B1BF924C2005700F63F4C /* Cart.json in Resources */,
 				2C3B1BF324C1F2B500F63F4C /* ProductList.json in Resources */,
 				C762C6251E1D417C00C09EBD /* Assets.xcassets in Resources */,
@@ -784,6 +791,7 @@
 				0751F7AA246B044800E42751 /* TableViewCellViewModel.swift in Sources */,
 				C762C6691E1D559000C09EBD /* TableViewCell.swift in Sources */,
 				2C3B1BF724C1F8DD00F63F4C /* MyNetworking.swift in Sources */,
+				2C35185424C48E1F008F2DF0 /* AddToCartApi.swift in Sources */,
 				A09DE8CC20E7BEBD00F6F2BF /* DefaultTableViewCell.swift in Sources */,
 				2C3B1BD824C0A22000F63F4C /* HomeViewController.swift in Sources */,
 				C762C6671E1D559000C09EBD /* ScrollView.swift in Sources */,
